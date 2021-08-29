@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
     res.sendFile('home.html', { root: '../' })
 })
 
+app.use(express.static(path.join(__dirname, '../static')));
+
 app.listen(port, () => {
   console.log(`Orbital is running at port ${port}`)
 })
