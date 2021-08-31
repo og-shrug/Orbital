@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
 
 app.use(express.static(path.join(__dirname, '../static')));
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || '3000', () => {
   console.log(`Orbital is running at port ${port}`)
 })
