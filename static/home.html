@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheets/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home - Orbital</title>
+</head>
+<body>
+<div id="main">
+    <div id="SideNav" class="sidenav">
+        <a onclick="closeNav()" id="sideNavLogo"><img src="images/logo.svg" width=75px height=50px id="logo">&nbsp;<p id="head">Orbital</p></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="playlists.html">My Playlists</a>
+        <a href="#" id="settingsNav"><i class="fa fa-cog"></i>&nbsp;Settings</a>
+        <a href="#" id="accountNav"><i class="fa fa-user"></i>&nbsp;Account</a>
+      </div>
+<div>
+<div id="topDiv">
+    
+    <div id="mainLogo" onclick="openNav()" >
+        <i class='fa fa-bars' id='sideNavBtn'></i>
+        
+    </div>
+
+    <div id="mainNav">
+        <button class="navParts"><i class="fa fa-home" id="homeI"></i></button>
+        <button class="navParts"><i class="fa fa-chevron-left" id="backI"></i></button>
+        <button class="navParts"><i class="fa fa-chevron-right" id="forwardI"></i></button>
+    </div>
+
+    <div id="searchbardiv">
+        <input type="text" id="searchbar" onfocus="removeLogo()" onblur="bringItback()" placeholder="Search for anything" required/><button id="searchBtn">
+        <i id="searchIco" class="fa fa-search"></i></button>
+    </div>
+
+    <div id="account">
+        <button id="signUpBtn"><img width=100 height=65 src="images/userIcon.svg"></button>
+    </div>
+</div>    
+</div>
+<script src="scripts/home.js"></script>
+</body>
+</html>

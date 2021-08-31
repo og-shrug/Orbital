@@ -1,6 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+body{
+    font-family: Inter;
+    background-color: rgb(12, 12, 12);
+}
+
+#topDiv{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+#mainLogo{
+    display:flex;
+    cursor:pointer;
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;  
+    /*all browsers lol*/
+    
+}
+
+
+#sideNavBtn{
+    margin-left: 30px !important;
+    margin-top:20px;
+    
+    font-size:40px;
+    color:#84DCC6;
+}
+
+
+#searchbar{
+    padding-left: 1px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 7px;
+    margin-left:200px;
+    width:600px;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    
+    outline:none;
+    background:transparent;
+    font-family: Inter;
+    color:#9da2cf;
+    font-size:17px;
+    transition: all 0.7s;
+}
+#searchbar:focus{
+    margin-left: 100px;
+    border-bottom-color: teal;
+    width:1200px;
+}
+
+#searchbar::placeholder{
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+#searchBtn{
+    padding:10px;
+    height:60px;
+    width:45px;
+    background: transparent;
+    color:aliceblue;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom: none;
+    outline:none;
+}
+
+#searchBtn:hover{
+    background-color:black
+}
+
+#signUpBtn{
+    display:flex;
+    width:10px;
+    height:100px;
+    margin-top: -20%;
+    font-size:30px;
+    margin-left:2800%;
+    color:rgb(255, 255, 255);
+    background-color:transparent;
+    border:none;
+    
+    font-family: 'Inter';
+}
+#signUpBtn p{
+    margin-top:15px;
+    margin-left:10px;
+}
+
+#mainNav{
+    margin-top: 20px;
+}
+#homeI{
+    margin-left:115px;
+    -webkit-text-stroke: 0px rgb(12, 12, 12);
+}
+
+.navParts{
+    
+    border:none;
+    -webkit-text-stroke: 2px rgb(12, 12, 12);
+    margin-left:30px;
+    font-size:30px;
+    color:rgb(180, 180, 180);
+    background-color:transparent;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow:hidden;
+    transition: 0.5s;
+    padding-top: 65px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c7c7c7;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #908282;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+#settingsNav{
+    margin-top:600px;
+}
+#accountNav{
+    margin-top:20px;
+}
+
+#mainLogo{
+    
+    
+}
+#sideNavLogo{
+    margin-left:50px;
+    margin-top:-20% !important;
+    
+}
 
 #head{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    margin-top: 1%;
+    margin-left:-5px !important;
+    color:#ffffff;
+    font-family: Lato;
+    
 }
+
