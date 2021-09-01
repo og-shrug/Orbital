@@ -4,6 +4,7 @@
 body{
     font-family: Inter;
     background-color: rgb(12, 12, 12);
+    overflow-x:hidden;
 }
 
 #topDiv{
@@ -48,7 +49,7 @@ body{
     font-family: Inter;
     color:#9da2cf;
     font-size:17px;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 #searchbar:focus{
     margin-left: 100px;
@@ -64,8 +65,9 @@ body{
 }
 
 #searchBtn{
+    
     padding:10px;
-    height:60px;
+    height:45px;
     width:45px;
     background: transparent;
     color:aliceblue;
@@ -74,10 +76,11 @@ body{
     border-left:none;
     border-bottom: none;
     outline:none;
+    cursor:pointer;
 }
 
 #searchBtn:hover{
-    background-color:black
+    
 }
 
 #signUpBtn{
@@ -179,3 +182,32 @@ body{
     
 }
 
+
+
+#searchSelect{
+    display:none;
+    margin-left:60px;
+    margin-top:-200px !important;
+    background-color:black;
+    color:whitesmoke;
+}
+.searchOpt{
+    background-color:rgb(136, 136, 136);
+}
+.trackDiv{
+    display:flex;
+    flex-flow:row wrap;
+}
+.trackDiv h3{
+    margin-left:20px;
+}
+.trackDiv img{
+    margin-left:297px;
+    width:250px;
+    height:200px;
+    margin-top:20px;
+}
+.searchRes{
+    color:white;
+    margin-left:295px;
+}

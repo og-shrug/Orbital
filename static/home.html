@@ -11,7 +11,7 @@
 <body>
 <div id="main">
     <div id="SideNav" class="sidenav">
-        <a onclick="closeNav()" id="sideNavLogo"><img src="images/logo.svg" width=75px height=50px id="logo">&nbsp;<p id="head">Orbital</p></a>
+        <a id="sideNavLogo"><img src="images/logo.svg" width=75px height=50px id="logo">&nbsp;<p id="head">Orbital</p></a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="playlists.html">My Playlists</a>
         <a href="#" id="settingsNav"><i class="fa fa-cog"></i>&nbsp;Settings</a>
@@ -32,8 +32,13 @@
     </div>
 
     <div id="searchbardiv">
-        <input type="text" id="searchbar" onfocus="removeLogo()" onblur="bringItback()" placeholder="Search for anything" required/><button id="searchBtn">
-        <i id="searchIco" class="fa fa-search"></i></button>
+        <input type="text" id="searchbar" onfocus="removeStuff()" placeholder="Search for anything" required/><button id="searchBtn">
+        </a id='searchBtn'><i id="searchIco" class="fa fa-search"></i><a>
+            <select id="searchSelect">
+                <option class="searchOpt">track</option>
+                <option class="searchOpt">artist</option>
+            </select>
+
     </div>
 
     <div id="account">
