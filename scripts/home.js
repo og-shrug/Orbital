@@ -3,6 +3,8 @@ isSearchActive = false;
 searchBar = document.getElementById("searchbar")
 searchSel = document.getElementById("searchSelect");
 
+alert("Orbital is still in its development stage.")
+
 if(localStorage.getItem("isLoggedIn") == "true"){
 
 }
